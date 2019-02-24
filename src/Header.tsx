@@ -1,7 +1,7 @@
 import * as React from "react";
 import { NavLink, RouteComponentProps, withRouter } from "react-router-dom";
 import "url-search-params-polyfill";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 
 const Header: React.SFC<RouteComponentProps> = props => {
   const [search, setSearch] = React.useState("");
@@ -31,7 +31,7 @@ const Header: React.SFC<RouteComponentProps> = props => {
           onKeyDown={handleSearchKeydown}
         />
       </div>
-      <img src={logo} className="header-logo" alt="logo" />
+      {/* <img src={logo} className="header-logo" alt="logo" /> */}
       <h1 className="header-title">React Shop</h1>
       <nav>
         <NavLink
